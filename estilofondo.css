@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: oswald, helvetica, arial, sans-serif;
+	background:url(screen-5.jpg), #000;
+	background-size: cover;
+	background-attachment:fixed;
+}
+h1{
+	position: absolute;
+	font-size: 60px;
+	color: #fff;
+	font-family: 'Josefin Sans';
+	letter-spacing: 18px;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+p{
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+    font-family: 'Josefin Sans';
+    letter-spacing: 10px;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+#particles-js {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,.7);
+}
+
+.a-boton{
+    position: absolute;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Josefin Sans';    
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.a-boton:hover{
+    color:#4d4d4d;
+    background: #fff;
+    box-shadow: 0 0 1px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    transition-delay: 1s;
+}
+.a-boton .boton-neon{
+    position: absolute;
+    display: block;
+}
+.a-boton .boton-neon:nth-child(1){
+    top: 0;
+    left: -100%;;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fff);
+}
+.a-boton:hover .boton-neon:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.a-boton .boton-neon:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#fff);
+}
+.a-boton:hover .boton-neon:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.a-boton .boton-neon:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fff);
+}
+.a-boton:hover .boton-neon:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.a-boton .boton-neon:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#fff);
+}
+.a-boton:hover .boton-neon:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
